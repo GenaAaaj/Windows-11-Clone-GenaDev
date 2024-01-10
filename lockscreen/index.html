@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 11 LockScreen Clone - GenaDev</title>
+    <meta name="description" content="Semi-perfect homemade clone of the Microsoft Windows 11 LockScreen in HTML, CSS, and JavaScript. Emulate Windows 11 LockScreen with multiple settings and extras, custom picture, custom username.">
+
+    <meta property="og:title" content="Windows 11 LockScreen Clone - GenaDev">
+    <meta property="og:description" content="Semi-perfect homemade clone of the Microsoft Windows 11 LockScreen in HTML, CSS, and JavaScript. Emulate Windows 11 LockScreen with multiple settings and extras, custom picture, custom username.">
+    <meta property="og:image" content="/assets/img/og-image.jpg">
+    <meta property="og:url" content="https://windows11.vercel.app">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:title" content="Windows 11 LockScreen Clone - GenaDev">
+    <meta name="twitter:description" content="Semi-perfect homemade clone of the Microsoft Windows 11 LockScreen in HTML, CSS, and JavaScript. Emulate Windows 11 LockScreen with multiple settings and extras, custom picture, custom username.">
+    <meta name="twitter:image" content="/assets/img/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@genaaaaj">
+
+    <link rel="icon" type="image/png" href="/assets/img/logo.png">
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+
+<body>
+    <noscript>Please enable JavaScript in order to run this application</noscript>
+    <main>
+        <section id="settings" class="s1">
+            <div id="settingsfc" class="heading">
+                <h1>Setup</h1>
+                <p>Choose your preferences for the login page</p>
+            </div>
+            <div id="settingslc" class="optcontainer">
+                <div class="user">
+                    <h3>Username:</h3>
+                    <input placeholder="John Doe" id="user" name="us"></input>
+                </div>
+                <div class="pfp">
+                    <h3>Profile Picture:</h3>
+                    <input type="radio" id="random" name="pf" value="random" checked></input>
+                    <label for="random">Random</label>
+                    <input type="radio" id="none" name="pf" value="none"></input>
+                    <label for="none">None</label>
+                    <input type="radio" id="custom" name="pf" value="custom"><label for="custom">Custom</label><input
+                        placeholder="Custom image URL" id="url" name="url" disabled></input></input>
+                </div>
+                <div class="method">
+                    <h3>Unlock method:</h3>
+                    <input type="radio" id="psw" name="am" value="random" checked></input>
+                    <label for="psw">Password</label>
+                    <input type="radio" id="pin" name="am" value="none"></input>
+                    <label for="pin">PIN</label>
+                    <input id="auth" name="access" placeholder="Your PASSWORD here">
+                </div>
+                <button onclick="start()">Start</button>
+                <div class="copy">Coded By <a href="https://github.com/GenaAaaj">GenaDev</a></div>
+            </div>
+        </section>
+        <section id="lockscreen" class="s2 hidden">
+            <div class="usercard">
+                <div id="piccont"></div>
+                <h1 id="usercont"></h1>
+                <div class="inputbox" id="ipb">
+                    <input type="password" id="authinput">
+                    <a class="next" id="next">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                            stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12L19 12M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div id="error" class="hidden">
+                    Incorrect password. Please try again.
+                    <button id="acepbut" class="acepbut">Accept</button>
+                </div>
+                <a id="forgot" class="forgot" href="#"></a>
+            </div>
+            <div id="success" class="hidden loader">
+                <h2 id="suctext">Welcome</h2>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </section>
+        
+
+        <footer id="footer" class="hidden">
+            <div class="prefo">Coded By <a class="siteLink" href="https://github.com/GenaAaaj">GenaDev</a></div>
+            <div class="buttons">
+                <a class="pop">
+                    <p>ENG</p>
+                    <span class="langpop">Language</span>
+                </a>
+                <a class="pop"><img width="16" src="assets/img/con.svg">
+                    <span class="conpop">Internet</span></a>
+                <a class="pop"><img width="16" src="assets/img/acc.svg">
+                    <span class="accpop">Accessibility</span></a>
+                <a class="pop"><img width="16" src="assets/img/pwr.svg">
+                    <span class="pwrpop">Power</span></a>
+            </div>
+        </footer>
+    </main>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
