@@ -388,6 +388,6 @@ footer a:hover{
 }
 @media screen and (max-width:768px){
     .loader{
-        top:50%
+        top:70%
     }
 }
