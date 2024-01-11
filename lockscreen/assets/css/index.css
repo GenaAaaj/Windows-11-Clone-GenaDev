@@ -265,7 +265,7 @@ footer{
     justify-content:space-between;
     width:100%;
     margin-bottom:20px;
-    align-items:center
+    align-items:center;
     position: absolute;
     bottom: 0;
 }
