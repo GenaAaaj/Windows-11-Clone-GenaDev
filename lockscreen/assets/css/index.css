@@ -266,6 +266,8 @@ footer{
     width:100%;
     margin-bottom:20px;
     align-items:center
+    position: absolute;
+    bottom: 0;
 }
 footer a{
     margin:6px;
