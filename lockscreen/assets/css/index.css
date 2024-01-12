@@ -8,9 +8,11 @@ body{
     background-image:url(/lockscreen/assets/img/bg.webp);
     background-size:cover;
     font-family:'Segoe UI';
-    overflow:hidden;
     height:100vh;
     justify-content:center
+}
+.wrapper {
+  overflow: hidden
 }
 .optcontainer,input{
     background:rgb(255,255,255,.5)
